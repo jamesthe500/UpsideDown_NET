@@ -1,0 +1,11 @@
+/Users/jamesddaniels/Projects/UpsideDown/UpsideDown/bin/Debug/netcoreapp2.0/UpsideDown.deps.json
+/Users/jamesddaniels/Projects/UpsideDown/UpsideDown/bin/Debug/netcoreapp2.0/UpsideDown.runtimeconfig.json
+/Users/jamesddaniels/Projects/UpsideDown/UpsideDown/bin/Debug/netcoreapp2.0/UpsideDown.runtimeconfig.dev.json
+/Users/jamesddaniels/Projects/UpsideDown/UpsideDown/bin/Debug/netcoreapp2.0/UpsideDown.dll
+/Users/jamesddaniels/Projects/UpsideDown/UpsideDown/bin/Debug/netcoreapp2.0/UpsideDown.pdb
+/Users/jamesddaniels/Projects/UpsideDown/UpsideDown/obj/Debug/netcoreapp2.0/UpsideDown.csprojResolveAssemblyReference.cache
+/Users/jamesddaniels/Projects/UpsideDown/UpsideDown/obj/Debug/netcoreapp2.0/UpsideDown.csproj.CoreCompileInputs.cache
+/Users/jamesddaniels/Projects/UpsideDown/UpsideDown/obj/Debug/netcoreapp2.0/UpsideDown.AssemblyInfoInputs.cache
+/Users/jamesddaniels/Projects/UpsideDown/UpsideDown/obj/Debug/netcoreapp2.0/UpsideDown.AssemblyInfo.cs
+/Users/jamesddaniels/Projects/UpsideDown/UpsideDown/obj/Debug/netcoreapp2.0/UpsideDown.dll
+/Users/jamesddaniels/Projects/UpsideDown/UpsideDown/obj/Debug/netcoreapp2.0/UpsideDown.pdb

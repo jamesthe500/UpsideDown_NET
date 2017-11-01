@@ -1,0 +1,17 @@
+﻿<Properties StartupConfiguration="{D3716D52-F276-48A3-A278-4440C913CAEE}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="UpsideDown/.gitignore">
+    <Files>
+      <File FileName="UpsideDown/appsettings.json" Line="2" Column="37" />
+      <File FileName="UpsideDown/Program.cs" Line="21" Column="38" />
+      <File FileName="UpsideDown/Startup.cs" Line="46" Column="44" />
+      <File FileName="UpsideDown/.gitignore" Line="1" Column="13" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.UpsideDown PreferredExecutionTarget="MonoDevelop.Default" />
+  <MultiItemStartupConfigurations />
+</Properties>
