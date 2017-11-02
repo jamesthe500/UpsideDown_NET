@@ -29,10 +29,16 @@ namespace UpsideDown
         public void ConfigureServices(IServiceCollection services)
         {
             //services.AddMvc();
+            services.AddSingleton<IGreeter, Greeter>();
+
+            services.AddSingleton(Configuration);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
+          public void Configure(IApplicationBuilder app, 
+                                IHostingEnvironment env, 
+                                ILoggerFactory loggerFactory, 
+                                IGreeter greeter)
         {
             loggerFactory.AddConsole();
 
@@ -43,7 +49,7 @@ namespace UpsideDown
           
             app.Run(async (context) =>
             {
-                var greeting = Configuration["greeting"];
+                var greeting = greeter.GetGreeting();
                 await context.Response.WriteAsync(greeting);
             });
         }
