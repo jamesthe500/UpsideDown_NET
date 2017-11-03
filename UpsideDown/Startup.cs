@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Routing;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
@@ -28,7 +29,7 @@ namespace UpsideDown
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            //services.AddMvc();
+            services.AddMvc();
             services.AddSingleton<IGreeter, Greeter>();
 
             services.AddSingleton(Configuration);
@@ -56,12 +57,19 @@ namespace UpsideDown
 
             // looks in wwwroot for default files and serves them.
             app.UseFileServer();
-          
-            app.Run(async (context) =>
-            {
-                var greeting = greeter.GetGreeting();
-                await context.Response.WriteAsync(greeting);
-            });
+
+            // gives routing control to MVC?
+            app.UseMvc(ConfigureRoutes);
+
+            // a catch all for if a route isn't found
+            app.Run(ctx => ctx.Response.WriteAsync("Not Found"));
+
+        }
+
+        private void ConfigureRoutes(IRouteBuilder routeBuilder)
+        {
+            // I think this is supposed to server the default when there is nothing after the base URL. It's not.
+            routeBuilder.MapRoute("Default", "{controller=Home}/{action=Index}/{id?}");
         }
     }
 }

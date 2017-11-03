@@ -11,4 +11,7 @@
   <ItemGroup>
     <None Remove="wwwroot\.gitignore" />
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Controllers\" />
+  </ItemGroup>
 </Project>

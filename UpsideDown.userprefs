@@ -1,12 +1,10 @@
 ﻿<Properties StartupConfiguration="{D3716D52-F276-48A3-A278-4440C913CAEE}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="UpsideDown/wwwroot/EmptyHTMLFile.html">
+  <MonoDevelop.Ide.Workbench ActiveDocument="UpsideDown/Startup.cs">
     <Files>
       <File FileName="UpsideDown/appsettings.json" Line="3" Column="20" />
-      <File FileName="UpsideDown/Program.cs" Line="21" Column="38" />
-      <File FileName="UpsideDown/Startup.cs" Line="57" Column="67" />
-      <File FileName="UpsideDown/wwwroot/js/site.js" Line="1" Column="1" />
-      <File FileName="UpsideDown/Greeter.cs" Line="17" Column="56" />
-      <File FileName="UpsideDown/wwwroot/EmptyHTMLFile.html" Line="1" Column="1" />
+      <File FileName="UpsideDown/Startup.cs" Line="72" Column="48" />
+      <File FileName="UpsideDown/Greeter.cs" Line="27" Column="1" />
+      <File FileName="UpsideDown/Controllers/HomeController.cs" Line="13" Column="2" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
