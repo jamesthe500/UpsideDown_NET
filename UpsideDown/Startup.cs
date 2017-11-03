@@ -44,8 +44,18 @@ namespace UpsideDown
 
             if (env.IsDevelopment())
             {
+                // for exception handling
                 app.UseDeveloperExceptionPage();
+            } else {
+                // for exception handling
+                app.UseExceptionHandler(new ExceptionHandlerOptions
+                {
+                    ExceptionHandler = context => context.Response.WriteAsync("Oops!")
+                });
             }
+
+            // looks in wwwroot for default files and serves them.
+            app.UseFileServer();
           
             app.Run(async (context) =>
             {
