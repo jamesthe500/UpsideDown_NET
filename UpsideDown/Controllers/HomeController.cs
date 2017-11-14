@@ -1,13 +1,29 @@
 ﻿
 
+using Microsoft.AspNetCore.Mvc;
+using UpsideDown.Models;
+
 namespace UpsideDown.Controllers
 {
-    public class HomeController
+    public class HomeController : Controller
     {
-        public string Index()
+        public IActionResult Index()
+        {
+            var model = new Quote
+            {
+                Id = 1,
+                QuoteText = "Guys!...",
+                Sayer = "Dustin"
+
+            };
+
+            return View(model);
+        }
+
+        public string Moop()
         {
             // servers this up when you go to http://localhost:5001/home
-            return "Hello, from home controller";
+            return "No thanks, from home controller";
         }
     }
 }

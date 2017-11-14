@@ -1,7 +1,3 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -36,7 +32,7 @@ namespace UpsideDown
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-          public void Configure(IApplicationBuilder app, 
+        public void Configure(IApplicationBuilder app, 
                                 IHostingEnvironment env, 
                                 ILoggerFactory loggerFactory, 
                                 IGreeter greeter)
@@ -55,8 +51,12 @@ namespace UpsideDown
                 });
             }
 
+            //app.UseStaticFiles();
+
+            //app.UseDefaultFiles();
+
             // looks in wwwroot for default files and serves them.
-            app.UseFileServer();
+            //app.UseFileServer();
 
             // gives routing control to MVC?
             app.UseMvc(ConfigureRoutes);
@@ -69,7 +69,12 @@ namespace UpsideDown
         private void ConfigureRoutes(IRouteBuilder routeBuilder)
         {
             // I think this is supposed to server the default when there is nothing after the base URL. It's not.
-            routeBuilder.MapRoute("Default", "{controller=Home}/{action=Index}/{id?}");
+            routeBuilder.MapRoute(
+                name: "Default", 
+
+                template: "{controller=Home}/{action=Index}/{id?}");
         }
+
+
     }
 }
