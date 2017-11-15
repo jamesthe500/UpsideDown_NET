@@ -1,11 +1,12 @@
 ﻿<Properties StartupConfiguration="{D3716D52-F276-48A3-A278-4440C913CAEE}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="UpsideDown/Startup.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="UpsideDown/Services/QuoteData.cs">
     <Files>
-      <File FileName="UpsideDown/Startup.cs" Line="16" Column="6" />
-      <File FileName="UpsideDown/Controllers/HomeController.cs" Line="20" Column="32" />
-      <File FileName="UpsideDown/Program.cs" Line="17" Column="1" />
+      <File FileName="UpsideDown/Startup.cs" Line="33" Column="64" />
+      <File FileName="UpsideDown/Controllers/HomeController.cs" Line="23" Column="9" />
+      <File FileName="UpsideDown/Program.cs" Line="30" Column="1" />
       <File FileName="UpsideDown/Models/Quote.cs" Line="8" Column="41" />
-      <File FileName="UpsideDown/Views/Home/Index.cshtml" Line="14" Column="28" />
+      <File FileName="UpsideDown/Views/Home/Index.cshtml" Line="12" Column="19" />
+      <File FileName="UpsideDown/Services/QuoteData.cs" Line="22" Column="72" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />

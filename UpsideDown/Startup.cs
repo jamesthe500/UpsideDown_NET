@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Routing;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
+using UpsideDown.Services;
 
 namespace UpsideDown
 {
@@ -29,6 +30,7 @@ namespace UpsideDown
             services.AddSingleton<IGreeter, Greeter>();
 
             services.AddSingleton(Configuration);
+            services.AddScoped<IQuoteData, InMemoryQuoteData>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
